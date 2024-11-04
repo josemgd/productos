@@ -1,12 +1,12 @@
-import ast #Sirve para interpretar strings como estructuras de python
+import ast
 productos = []
 
 def añadir_producto():
     producto={'nombre':"",'precio':"",'cantidad':""}
 
-    nombre=str(input("Nombre del producto: "))
-    precio=str(input("Ingresa el precio: "))
-    cantidad=str(input("Ingrese la cantidad en stock: "))
+    nombre=str(input("Nombre del producto "))
+    precio=str(input("Ahora ingrese el precio "))
+    cantidad=str(input("Por ultimo la cantidad "))
     producto['nombre'] = nombre
 
     if productos == []:
@@ -24,11 +24,6 @@ def añadir_producto():
         producto['cantidad'] = cantidad    
         productos.append(producto)
 
-     
-    
-        
-    
-    
 def ver_productos():
     for producto in productos:
         print(f'{producto}\n')
